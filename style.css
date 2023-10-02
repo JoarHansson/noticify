@@ -45,17 +45,18 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--font-color);
   font-style: normal;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 130%;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 800;
   line-height: 110%;
 }
@@ -72,7 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 4rem;
+  margin: 2rem 2rem;
   gap: 2rem;
 }
 
@@ -84,7 +85,7 @@ h2.logo {
 header > a {
   color: var(--font-color);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 800;
   line-height: 110%;
 }
@@ -92,9 +93,9 @@ header > a {
 /* main styles: */
 
 main {
-  margin: 2rem 4rem;
+  margin: 1rem 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 5rem;
@@ -105,18 +106,18 @@ main {
   flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
-  width: 45rem;
+  /* width: 45rem; */
 }
 
 .info {
-  width: 30rem;
+  width: 100%;
 }
 
 /* card styles: */
 
 .card {
   background-color: var(--bg-gray);
-  width: 20.75rem;
+  /* width: 20.75rem; */
   height: 21.75rem;
   border-radius: 1rem;
   box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.1);
@@ -173,20 +174,30 @@ main {
   margin: 0 0 2rem;
 }
 
-.info > .button-big {
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.info .button-big {
   height: 3rem;
-  width: 12rem;
-  margin-right: 1rem;
+  width: 9rem;
+  /* margin-right: 1rem; */
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0;
   border-radius: 1rem;
   border-style: none;
+  scale: 100%;
 }
 
 .button-text {
   margin: 0 auto;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .arrow-black {
@@ -198,4 +209,8 @@ main {
   border-radius: 1rem;
   align-content: end;
   margin: 0;
+}
+
+.svg-black-arrow {
+  scale: 80%;
 }
