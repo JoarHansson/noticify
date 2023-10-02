@@ -1,0 +1,201 @@
+:root {
+  --red: #fa6262;
+  --blue: #cae9f2;
+  --bg-gray: #fbfbfb;
+  --yellow: #fffacc;
+  --green: #e2efc7;
+  --pink: #efc7c7;
+  --font-color: #000;
+  --blue-solid: #a1dbed;
+  --green-solid: #d4eda1;
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-darker-green {
+  background-color: var(--green-solid);
+}
+
+.bg-darker-blue {
+  background-color: var(--blue-solid);
+}
+
+/* general: */
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+  font-style: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* header styles: */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+  gap: 2rem;
+}
+
+h2.logo {
+  color: var(--red);
+  margin: 0 auto 0 0;
+}
+
+header > a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+/* main styles: */
+
+main {
+  margin: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 45rem;
+}
+
+.info {
+  width: 30rem;
+}
+
+/* card styles: */
+
+.card {
+  background-color: var(--bg-gray);
+  width: 20.75rem;
+  height: 21.75rem;
+  border-radius: 1rem;
+  box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+
+  margin: 1rem 0 0 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.card > h2 {
+  margin: 2rem 0 0 1rem;
+}
+
+.card > p {
+  margin: 1rem 1rem;
+}
+
+.card > button {
+  border-radius: 0rem 0rem 1rem 0rem;
+  background-color: var(--red);
+  width: 2.625rem;
+  height: 2.5625rem;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* info styles: */
+
+.info > h1 {
+  margin: 0 0 2rem;
+}
+
+.info > p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0 0 2rem;
+}
+
+.info > .button-big {
+  height: 3rem;
+  width: 12rem;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 1rem;
+  border-style: none;
+}
+
+.button-text {
+  margin: 0 auto;
+}
+
+.arrow-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  align-content: end;
+  margin: 0;
+}
